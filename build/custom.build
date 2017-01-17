@@ -1,0 +1,31 @@
+# API
+# --------
+api: 2
+
+# Core
+# --------
+core: 8.x
+
+
+# Projects
+# --------
+
+projects:
+
+  # Get the latest version of Drupal.
+  drupal:
+    # Picks the latest release.
+    version: ~
+
+  # Pull in install profile.
+  thejibeprofilestarterkit:
+    type: "profile"
+    subdir: ""
+    download:
+      type: "copy"
+      url: "./profile"
+
+# Includes
+# --------
+includes:
+  - contrib-modules.make
